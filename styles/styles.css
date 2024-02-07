@@ -202,6 +202,98 @@ footer i {
 .registrar-link a:hover{
     text-decoration: underline;
 }
+/******************************** ARTICULOS.HTML *********************************************/
+
+.pagina-articulos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto-articulos{
+    width: 20%;
+    height: auto;
+}
+
+.lista-articulos{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    border: 2px solid #0868B8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+
+}
+.articulos-precio{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    align-items: center;
+
+}
+.boton-agregar-al-carrito{
+    width: 25%;
+    height: 0.5%;
+}
+
+/************************** CONTACTOS.HTML ************************/
+.pagina-contactos{
+    display: flex;
+}
+.pagina-contactos img {
+    width: 40%;
+
+}
+
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+.formulario-contacto label{
+    margin-bottom: 5px;
+}
+
+.formulario-contacto input, button{
+    margin-bottom: 5px;
+}
+
+/************************** PEDIDOS.HTML ************************/
+.tabla-pedidos{
+    width: 100%;
+
+}
+
+.pedidos-explicacion{
+    display: flex;
+    justify-content: space-between;
+}
+
+.padidos-total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/************************** REGISTRO.HTML ************************/
+
+.Resitro-NuevoCliente{
+    display: flex;
+    justify-content: center;
+}
+
+.Resitro-NuevoCliente img{
+    width: auto;
+    height: 400px;
+    padding-right: 1%;
+
+}
+/************************** SUCURSALES.HTML ************************/
+
+
 
 /************************** OTROS CODIGOS ************************/
 
