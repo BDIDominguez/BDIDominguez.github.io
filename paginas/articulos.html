@@ -61,155 +61,325 @@
 
     <section class="cuerpo-central">
         <section class="pagina-articulos">
-            <div class="Lista-Rubros">
-                <ul>
-                    <li>Snack</li>
-                    <ul>
-                        <li>Mani</li>
-                        <li>Papas Fritas</li>
-                        <li>Palitos Salados</li>
-                    </ul>
-                    <li>Gaseosas</li>
-                    <ul>
-                        <li>Cero Azucar</li>
-                        <li>Importadas</li>
-                        <li>Produccion Local</li>
-                    </ul>
-                </ul>
-            </div>
-            <div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
+            <div class="articulos-grid-container-principal">
+                <div class="articulos-grid-container-principal-item1">
+                  <!--  ************************ ACORDEON DE RUBRO DEPARTAMENTO SUBDEPARTAMENTO   ******************************** -->
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne">
+                          Lacteos
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body text-start">
+                          <button type="button" class="btn">Yogures</button>
+                          <button type="button" class="btn">Leches Enteras</button>
+                          <button type="button" class="btn">Leches Descremadas</button>
+                          <button type="button" class="btn">Queso Cremosos</button>
+                          <button type="button" class="btn">Queso Tybos</button>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo">
+                          Licores y Cervezas
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <button type="button" class="btn">Linea Cero</button>
+                          <button type="button" class="btn">Sabores Excentricos</button>
+                          <button type="button" class="btn">Licores Importados</button>
+                          <button type="button" class="btn">Licores Nacioneales</button>
+                          <button type="button" class="btn">Cervezas</button>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree">
+                          Snacks
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <button type="button" class="btn">Mani Salados</button>
+                          <button type="button" class="btn">Mani Saborizados</button>
+                          <button type="button" class="btn">Papas Fritas</button>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <!--  ************************ ACORDEON DE RUBRO DEPARTAMENTO SUBDEPARTAMENTO   ******************************** -->
                 </div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
-                        </div>
+                <div class="articulos-grid-container-principal-item2">
+                  <!--  ************************ ARTICULOS CARGADOS A LA PANTALLA EN UN GRID CSS   ******************************** -->
+                  <!--  ar1  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Cremoso El Coya S. A.</h4>
                     </div>
-                </div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
-                        </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
                     </div>
-                </div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
-                        </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 4 unidades de 4kg.~</p>
                     </div>
-                </div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
-                        </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
                     </div>
-                </div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
-                        </div>
+                  </div>
+                  <!--  ar2  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Tybo El Coya S. A.</h4>
                     </div>
-                </div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
-                        </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
                     </div>
-                </div>
-                <div class="lista-articulos">
-                    <img src="../imagenes/historia4.jpg" alt="Articulo de venta " class="foto-articulos">
-                    <div>
-                        <h3>Nombre del Producto</h3>
-                        <p>Descripcion del mismo, cantidad x bulto algun detalle para su venta</p>
-                        <div class="articulos-precio">
-                            <h5>Precio 10,00</h5>
-                            <h5>Unidades a Comprar</h5>
-                            <input type="Unidades">
-                            <button class="boton-agregar-al-carrito">Cargar al Carrito</button>
-                        </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 6 unidades de 4kg.~</p>
                     </div>
-                </div>
-            </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar3  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Tybo El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 6 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar1  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Cremoso El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 4 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar2  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Tybo El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 6 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar3  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Tybo El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 6 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar1  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Cremoso El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 4 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar2  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Tybo El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 6 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar3  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Tybo El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 6 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar1  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Cremoso El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 4 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar2  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Tybo El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 6 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ar3  -->
+                  <div class="articulos-grid-productos">
+                    <div class="articulos-grid-productos-item1"><img src="../imagenes/historia3.jpg" class="rounded mx-auto h-100 w-100 " alt="..."></div>
+                    <div class="articulos-grid-productos-item2">
+                      <h4>Queso Tybo El Coya S. A.</h4>
+                    </div>
+                    <div class="articulos-grid-productos-item3">
+                      <p>Queso de Chivo, estra seco, como todo argentino de bien, gracias y Viva Peron!!!! creado solo de leche de
+                        chivo negro para llevar a tono como todo los obreros argentinos </p>
+                    </div>
+                    <div class="articulos-grid-productos-item4">
+                      <p>La caja contiene 6 unidades de 4kg.~</p>
+                    </div>
+                    <div class="articulos-grid-productos-item5">
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">0.00</span>
+                        <button>Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
             
+            
+            
+                  <!--  Fin de Lista de Articulos  -->
+                </div>
+              </div>
             
         </section>
     </section>

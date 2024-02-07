@@ -94,19 +94,51 @@ footer i {
 }
 
 @media only screen and (max-width: 767px){
+    /*  INDEX.HTML    */
     .cuerpo-index-textos{
         display: flex;
         flex-direction: column;
         justify-content: space-between; 
-     
     }   
+    /*  ARTICULOS.HTML    */
+    .articulos-grid-productos {
+        display: grid;
+        grid-template-rows: auto ;
+        grid-template-columns: 1f ;
+        gap: 5px;
+        
+        border: 2px solid blue;
+        border-radius: 20px;
+        
+        grid-template-areas:
+            "foto "    
+            "nombre "
+            "descri "
+            "unixbu "
+            "cantidad";
+    }
 
 }
 @media only screen and (min-width: 767px){
+    /*  INDEX.HTML    */
     .cuerpo-index-textos{
         display: flex;
     }   
-    
+    /*  ARTICULOS.HTML    */
+    .articulos-grid-productos {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1f 4f;
+        gap: 5px;
+        border: 2px solid blue;
+        border-radius: 20px;
+        padding: 5px;
+        grid-template-areas:
+            "foto nombre nombre"
+            "foto descri descri"
+            "foto unixbu cantidad";
+    }    
+
 }
 /******************************** INICIARSESION.HTML *********************************************/
 .cuerpo-pagina-iniciarSesion{
@@ -203,40 +235,55 @@ footer i {
     text-decoration: underline;
 }
 /******************************** ARTICULOS.HTML *********************************************/
-
-.pagina-articulos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.articulos-grid-container-principal {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 5px;
+    grid-template-areas:
+        "area1 area2 "
+        "area1 area2 "
+        "area1 area2  ";
 }
 
-.foto-articulos{
-    width: 20%;
-    height: auto;
+.articulos-grid-container-principal-item1 {
+    text-align: center;
+    grid-area: area1;
 }
 
-.lista-articulos{
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0;
-    border: 2px solid #0868B8;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-
-
-}
-.articulos-precio{
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    align-items: center;
-
-}
-.boton-agregar-al-carrito{
-    width: 25%;
-    height: 0.5%;
+.articulos-grid-container-principal-item2 {
+    text-align: center;
+    grid-area: area2;
 }
 
+
+.articulos-grid-productos-item1 {
+    text-align: center;
+    grid-area: foto;
+}
+
+
+
+.articulos-grid-productos-item2 {
+    text-align: center;
+    grid-area: nombre;
+}
+
+.articulos-grid-productos-item3 {
+    text-align: center;
+    grid-area: descri;
+}
+
+.articulos-grid-productos-item4 {
+    text-align: center;
+    grid-area: unixbu;
+}
+
+.articulos-grid-productos-item5 {
+    text-align: center;
+    border: black 5px solod;
+    grid-area: cantidad;
+}
 /************************** CONTACTOS.HTML ************************/
 .pagina-contactos{
     display: flex;
