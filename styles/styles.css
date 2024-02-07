@@ -93,7 +93,7 @@ footer i {
     margin: 0.5%;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px){ /* CODIGO QUE SE EJECUTARA SI LA PANTALLA TIENE COMO MAXIMO 767PX  */
     /*  INDEX.HTML    */
     .cuerpo-index-textos{
         display: flex;
@@ -111,14 +111,16 @@ footer i {
         border-radius: 20px;
         
         grid-template-areas:
-        "foto nombre nombre"
-        "foto descri descri"
-        "foto unixbu cantidad";
+        "foto "    
+        "nombre "
+        "descri "
+        "unixbu "
+        "cantidad";
             
     }
 
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: 767px){ /* CODIGO QUE SE EJECUTARA SI LA PANTALLA ES MAYOR A 767PX  */
     /*  INDEX.HTML    */
     .cuerpo-index-textos{
         display: flex;
@@ -133,11 +135,10 @@ footer i {
         border-radius: 20px;
         padding: 5px;
         grid-template-areas:
-        "foto "    
-        "nombre "
-        "descri "
-        "unixbu "
-        "cantidad";
+        "foto nombre nombre"
+        "foto descri descri"
+        "foto unixbu cantidad";
+        
     }    
 
 }
