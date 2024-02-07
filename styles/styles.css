@@ -111,11 +111,10 @@ footer i {
         border-radius: 20px;
         
         grid-template-areas:
-            "foto "    
-            "nombre "
-            "descri "
-            "unixbu "
-            "cantidad";
+        "foto nombre nombre"
+        "foto descri descri"
+        "foto unixbu cantidad";
+            
     }
 
 }
@@ -134,9 +133,11 @@ footer i {
         border-radius: 20px;
         padding: 5px;
         grid-template-areas:
-            "foto nombre nombre"
-            "foto descri descri"
-            "foto unixbu cantidad";
+        "foto "    
+        "nombre "
+        "descri "
+        "unixbu "
+        "cantidad";
     }    
 
 }
