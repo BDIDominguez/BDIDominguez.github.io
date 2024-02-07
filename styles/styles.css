@@ -1,0 +1,212 @@
+/* stylep.css */
+
+:root {
+    --color-fondo-header: linear-gradient(45deg, #0868B8, #53d4ff, #2196f3, #92CBF9); /* Definición de la variable */
+    --color-fondo: #ecf0f1;
+  }
+/************************** CONFIGURACION DEL HEADER ***********************************/
+/* Estilo para el fondo del navbar */
+.navbar-custom {
+    /*background: var(--color-fondo-header);*/
+    background-image: var(--color-fondo-header);
+    background-size: 200% 100%; /* Ajusta según sea necesario */
+    animation: cambiar 10s ease infinite;
+}
+
+/* Ajustes para los enlaces en la barra de navegación */
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Ajuste para el contenedor principal del navbar */
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Ajuste para el enlace "Accesibilidad" en el dropdown */
+.dropdown-menu .dropdown-item {
+    width: 100%;
+    text-align: center;
+}
+
+/* Ajuste para la imagen del logo en el navbar */
+.navbar-brand {
+    padding: 0; /* Elimina el relleno interno */
+}
+
+.navbar-brand img {
+    max-height: 100%; /* Altura máxima del 100% */
+    width: auto;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.container-fluid{
+    padding: 0;
+}
+
+/******************************** CONFIGURACION DEL FOOTER *********************************************/
+
+footer{
+    padding: 0;
+    margin: 0;
+    background-image: var(--color-fondo-header);
+    background-size: 200% 100%; /* Ajusta según sea necesario */
+    animation: cambiar 10s ease infinite;
+}
+footer a {
+    text-decoration: none;
+}
+footer p{
+    font-size: 15px;
+}
+
+footer li {
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: hsl(4, 88%, 45%) !important;
+}
+footer i {
+    font-size: 20px;
+}
+
+/******************************** CONFIGURACION DEL CUERPO DE CADA PAGINA *********************************************/
+
+/******************************** INDEX.HTML *********************************************/
+.cuerpo-index-textos{
+    background-image: var(--color-fondo-header);
+    background-size: 200% 100%; /* Ajusta según sea necesario */
+    animation: cambiar 10s ease infinite;
+   
+    border-radius: 20px;
+    margin: 0.5%;
+}
+.cuerpo-index-textos div {
+    margin: 0.5%;
+}
+
+@media only screen and (max-width: 767px){
+    .cuerpo-index-textos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+     
+    }   
+
+}
+@media only screen and (min-width: 767px){
+    .cuerpo-index-textos{
+        display: flex;
+    }   
+    
+}
+/******************************** INICIARSESION.HTML *********************************************/
+.cuerpo-pagina-iniciarSesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../imagenes/FondoLogin.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fondo{
+    width: 420px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    color: #fff;
+}
+.cuerpo-pagina-iniciarSesionH1{
+    text-align: center;
+    font-size: 40px;
+}
+.fondo .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 45px 10px 20px;
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+.fondo .olvidar-recordar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 20px 0 15px;
+}
+.olvidar-recordar label input{
+    accent-color: #fff;
+    text-decoration: none;
+    margin-right: 3px;
+}
+.olvidar-recordar a:hover{
+    text-decoration: underline;
+}
+.fondo .btn{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.fondo .btn:hover{
+    opacity: 0.9;
+}
+.registrar-link{
+    font-size: 14.5;
+    text-align: center;
+    margin-top: 20px;
+}
+.registrar-link a{
+    text-decoration:none;
+    color: #fff;
+    font-weight: 600;
+}
+.registrar-link a:hover{
+    text-decoration: underline;
+}
+
+/************************** OTROS CODIGOS ************************/
+
+@keyframes cambiar {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 100% 0%; }
+}
