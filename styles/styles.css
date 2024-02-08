@@ -108,6 +108,7 @@ footer i {
         gap: 5px;
         border: 2px solid blue;
         border-radius: 20px;
+        padding: 10px;
         grid-template-areas:
         "foto "    
         "nombre "
@@ -135,6 +136,22 @@ footer i {
         "botones"
         "pago"
     }
+    
+    /*  ENCONSTRUCCION.HTML    */
+     .encontruccion-texto h1 {
+        font-size: 50px; 
+    }
+    
+    .encontruccion-texto h2 {
+        font-size: 25px; 
+    }
+    .encontruccion-texto a {
+        font-size: 15px; 
+    }
+    /*  REGISTRAR.HTML    */
+    .Resitro-NuevoCliente-Form{
+        width: 100%;
+    }
 
 }
 @media only screen and (min-width: 767px){ /* CODIGO QUE SE EJECUTARA SI LA PANTALLA ES MAYOR A 767PX  */
@@ -152,6 +169,7 @@ footer i {
         border: 2px solid blue;
         border-radius: 20px;
         padding: 5px;
+        
         grid-template-areas:
         "foto nombre nombre"
         "foto descri descri"
@@ -172,6 +190,24 @@ footer i {
         grid-template-areas:
         "medios explicacion botones pago"
     }
+
+    /*  ENCONSTRUCCION.HTML    */
+    .encontruccion-texto h1 {
+        font-size: 100px; 
+    }
+    
+    .encontruccion-texto h2 {
+        font-size: 50px; 
+    }
+    .encontruccion-texto a {
+        font-size: 30px; 
+    }
+    /*  REGISTRAR.HTML    */
+    .Resitro-NuevoCliente-Form{
+        width: 400px;
+    }
+
+
 }
 
 /******************************** INICIARSESION.HTML *********************************************/
@@ -322,31 +358,23 @@ footer i {
 
 /************************** CONTACTOS.HTML ************************/
 .pagina-contactos{
-    position: relative;
-    height: 140vh;
-    margin: 0;
-}
-
-.pagina-contactos img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../imagenes/FondoLogin.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .pagina-contactos-textos{
-    width: 500px;
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 10px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(15px);
     border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: black;
 }
@@ -363,6 +391,7 @@ footer i {
 .formulario-contacto button{
     margin-bottom: 10px;
 }
+
 
 /************************** PEDIDOS.HTML ************************/
 
@@ -409,14 +438,26 @@ footer i {
 .Resitro-NuevoCliente{
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: url("../imagenes/registro.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.Resitro-NuevoCliente img{
-    width: auto;
-    height: 400px;
-    padding-right: 1%;
+.Resitro-NuevoCliente-Form{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    text-align: center;
+    color: black;
 
 }
+
+
 /************************** SUCURSALES.HTML ************************/
 
 .card{
@@ -427,43 +468,29 @@ footer i {
 
 /************************** ENCONSTRUCCION.HTML ************************/
 .pagina-enconstruccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../imagenes/enconstruccion.jpg") no-repeat;
+    background-position: center;
+    /*
+    background-size: cover;
     position: relative;
     height: 100vh;
     margin: 0;
-}
-.pagina-enconstruccion img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    */
+
 }
 .encontruccion-texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -80%);
+    margin: auto;
     text-align: center;
     -webkit-text-stroke: 0.5px black; 
     color: white; 
-    
-}
-.encontruccion-texto h1 {
-    font-size: 100px; /* Ajusta el tamaño de fuente del h1 según tus necesidades */
 }
 
-.encontruccion-texto h2 {
-    font-size: 50px; /* Ajusta el tamaño de fuente del h2 según tus necesidades */
-}
-.encontruccion-texto a {
-    font-size: 30px; /* Ajusta el tamaño de fuente del h2 según tus necesidades */
-    color: white;
-    -webkit-text-stroke: 0.5px black;
-}
 .encontruccion-texto a:hover {
     color: red;
-    
 }
 
 /************************** OTROS CODIGOS ************************/
