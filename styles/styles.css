@@ -106,17 +106,34 @@ footer i {
         grid-template-rows: auto ;
         grid-template-columns: 1f ;
         gap: 5px;
-        
         border: 2px solid blue;
         border-radius: 20px;
-        
         grid-template-areas:
         "foto "    
         "nombre "
         "descri "
         "unixbu "
         "cantidad";
-            
+    }
+    /*  SUCURSALES.HTML    */
+    .pagina-sucursales{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    /*  PEDIDOS.HTML    */
+    .pedidos-grid-pagos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+        padding: 15px;
+        grid-template-areas:
+        "medios"
+        "explicacion"
+        "botones"
+        "pago"
     }
 
 }
@@ -124,6 +141,7 @@ footer i {
     /*  INDEX.HTML    */
     .cuerpo-index-textos{
         display: flex;
+        
     }   
     /*  ARTICULOS.HTML    */
     .articulos-grid-productos {
@@ -138,10 +156,24 @@ footer i {
         "foto nombre nombre"
         "foto descri descri"
         "foto unixbu cantidad";
-        
     }    
-
+     /*  SUCURSALES.HTML    */
+     .pagina-sucursales{
+        display: flex;
+        justify-content: space-between;
+    }
+    /*  PEDIDOS.HTML    */
+    .pedidos-grid-pagos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+        padding: 10px;
+        grid-template-areas:
+        "medios explicacion botones pago"
+    }
 }
+
 /******************************** INICIARSESION.HTML *********************************************/
 .cuerpo-pagina-iniciarSesion{
     display: flex;
@@ -237,6 +269,7 @@ footer i {
     text-decoration: underline;
 }
 /******************************** ARTICULOS.HTML *********************************************/
+
 .articulos-grid-container-principal {
     display: grid;
     grid-template-rows: auto auto;
@@ -286,6 +319,7 @@ footer i {
     border: black 5px solod;
     grid-area: cantidad;
 }
+
 /************************** CONTACTOS.HTML ************************/
 .pagina-contactos{
     display: flex;
@@ -311,21 +345,44 @@ footer i {
 }
 
 /************************** PEDIDOS.HTML ************************/
-.tabla-pedidos{
-    width: 100%;
 
-}
-
-.pedidos-explicacion{
-    display: flex;
-    justify-content: space-between;
-}
-
-.padidos-total{
+.pedidos-grid-pagos-item1 {
+    text-align: left;
+    grid-area: medios;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #f0f0f0; 
+    border-radius: 20px; 
+    padding: 10px;
+}
+.pedidos-grid-pagos-item2 {
+    text-align: justify;
+    grid-area: explicacion;
+    padding: 10px;
+    background: #f0f0f0; 
+    border-radius: 20px; 
+}
+.pedidos-grid-pagos-item3 {
+    text-align: center;
+    grid-area: botones;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-
+    background: #f0f0f0;
+    border-radius: 20px; 
+}
+.pedidos-grid-pagos-item4 {
+    text-align: center;
+    grid-area: pago;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 20px;
 }
 /************************** REGISTRO.HTML ************************/
 
@@ -342,7 +399,46 @@ footer i {
 }
 /************************** SUCURSALES.HTML ************************/
 
+.card{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
+/************************** ENCONSTRUCCION.HTML ************************/
+.pagina-enconstruccion{
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+.pagina-enconstruccion img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.encontruccion-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+    -webkit-text-stroke: 0.5px black; /* WebKit (Safari, Chrome) */
+    color: white; 
+    
+}
+.encontruccion-texto h1 {
+    font-size: 100px; /* Ajusta el tamaño de fuente del h1 según tus necesidades */
+}
+
+.encontruccion-texto h2 {
+    font-size: 50px; /* Ajusta el tamaño de fuente del h2 según tus necesidades */
+}
+.encontruccion-texto a {
+    font-size: 30px; /* Ajusta el tamaño de fuente del h2 según tus necesidades */
+}
 
 /************************** OTROS CODIGOS ************************/
 
