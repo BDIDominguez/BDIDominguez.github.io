@@ -425,7 +425,7 @@ footer i {
     left: 50%;
     transform: translate(-50%, -80%);
     text-align: center;
-    -webkit-text-stroke: 0.5px black; /* WebKit (Safari, Chrome) */
+    -webkit-text-stroke: 0.5px black; 
     color: white; 
     
 }
@@ -438,6 +438,12 @@ footer i {
 }
 .encontruccion-texto a {
     font-size: 30px; /* Ajusta el tamaño de fuente del h2 según tus necesidades */
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+}
+.encontruccion-texto a:hover {
+    color: red;
+    
 }
 
 /************************** OTROS CODIGOS ************************/
