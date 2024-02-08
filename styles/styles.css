@@ -463,10 +463,17 @@ footer i {
     backdrop-filter: blur(15px);
     border-radius: 10px;
     text-align: center;
-    color: black;
-
+    color: whitesmoke;
 }
-
+.Resitro-NuevoCliente-Form label,
+.Resitro-NuevoCliente-Form input,
+.Resitro-NuevoCliente-Form small {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.Resitro-NuevoCliente-Form label {
+    font-size: 25px;
+}
 
 /************************** SUCURSALES.HTML ************************/
 
