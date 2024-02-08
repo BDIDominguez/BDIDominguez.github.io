@@ -157,7 +157,7 @@ footer i {
     }
     /*  REGISTRAR.HTML    */
     .Resitro-NuevoCliente-Form{
-        width: 100%;
+        width: 80%;
     }
 
 }
@@ -449,7 +449,7 @@ footer i {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100vh;
+    min-width: 100%;
     background: url("../imagenes/registro.jpg") no-repeat;
     background-position: center;
     background-size: cover;
