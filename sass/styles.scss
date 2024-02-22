@@ -1,0 +1,53 @@
+:root{
+    --color--fondo-header: linear-gradient(45deg, #0868B8, #53d4ff, #2196f3, #92CBF9); /* Definición de la variable */
+    --color-fondo: #ecf0f1;
+}
+
+/*  Header  */
+
+.navbar-custom{
+    background-image: var(--color--fondo-header);
+    background-size: 200% 100%;
+    animation: cambiar 10s ease infinite;
+}
+
+@keyframes cambiar {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 100% 0%; }
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-item{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.dropdown-menu .dropdown-item{
+    width: 100%;
+    text-align: center;
+}
+.navbar-brand{
+    padding: 0;
+}
+
+.navbar-brand img{
+    max-height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    padding: 0;
+}
