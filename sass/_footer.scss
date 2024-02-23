@@ -1,0 +1,22 @@
+footer{
+    padding: 0;
+    margin: 0;
+    background-image: var(--color-fondo-header);
+    background-size: 200% 100%;
+    animation: cambiar 10s ease infinite;
+    a {
+        text-decoration: none;
+    }
+    p{
+        font-size: 15px;
+    }
+    li{
+        font-size: 20px;
+    }
+    a:hover{
+        color: hsl(4,88%,45%) !important;
+    }
+    i {
+        font-size: 20px;
+    }
+}

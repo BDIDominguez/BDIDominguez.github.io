@@ -1,1 +1,196 @@
-:root{--color--fondo-header: linear-gradient(45deg, #0868B8, #53d4ff, #2196f3, #92CBF9);--color-fondo: #ecf0f1}.navbar-custom{background-image:var(--color--fondo-header);background-size:200% 100%;animation:cambiar 10s ease infinite}@keyframes cambiar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:100% 0%}}.navbar-nav{width:100%;display:flex;justify-content:space-between}.navbar{margin:0;padding:0}.navbar-nav .nav-item{flex-grow:1;text-align:center}.dropdown-menu .dropdown-item{width:100%;text-align:center}.navbar-brand{padding:0}.navbar-brand img{max-height:100%;width:auto;display:block;margin:0 auto}.container-fluid{padding:0}/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+:root {
+  --color-fondo-header: linear-gradient(45deg, #0868B8, #53d4ff, #2196f3, #92CBF9); /* Definición de la variable */
+  --color-fondo: #ecf0f1;
+}
+
+.navbar-custom {
+  background-image: var(--color-fondo-header);
+  background-size: 200% 100%;
+  animation: cambiar 10s ease infinite;
+}
+
+@keyframes cambiar {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .nav-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.dropdown-menu .dropdown-item {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  max-height: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
+  background-image: var(--color-fondo-header);
+  background-size: 200% 100%;
+  animation: cambiar 10s ease infinite;
+}
+footer a {
+  text-decoration: none;
+}
+footer p {
+  font-size: 15px;
+}
+footer li {
+  font-size: 20px;
+}
+footer a:hover {
+  color: hsl(4, 88%, 45%) !important;
+}
+footer i {
+  font-size: 20px;
+}
+
+.cuerpo-index-textos {
+  background-image: var(--color-fondo-header);
+  /*background-image: linear-gradient(45deg, #0868B8, #53d4ff, #2196f3, #92CBF9);*/
+  background-size: 200% 100%;
+  animation: cambiar 10s ease infinite;
+  border-radius: 20px;
+  margin: 0.5%;
+}
+.cuerpo-index-textos div {
+  margin: 0.5%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* INDEX.HTML */
+  .cuerpo-index-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cuerpo-index-textos div {
+    margin: 0.5%;
+    flex: 1;
+    width: 100%;
+  }
+  /* ARTICULOS.HTML */
+  .articulos-grid-productos {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1f;
+    gap: 5px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    grid-template-areas: "foto" "nombre" "descri" "unixbu" "cantidad";
+  }
+  /*  SUCURSALES.HTML    */
+  .pagina-sucursales {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /*  PEDIDOS.HTML    */
+  .pedidos-grid-pagos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    padding: 15px;
+    grid-template-areas: "medios" "explicacion" "botones" "pago";
+  }
+  /*  ENCONSTRUCCION.HTML    */
+  .encontruccion-texto h1 {
+    font-size: 50px;
+  }
+  .encontruccion-texto h2 {
+    font-size: 25px;
+  }
+  .encontruccion-texto a {
+    font-size: 15px;
+  }
+  /*  REGISTRAR.HTML    */
+  .Resitro-NuevoCliente-Form {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 767px) {
+  /*  INDEX.HTML    */
+  .cuerpo-index-textos {
+    display: flex;
+  }
+  .cuerpo-index-textos div {
+    width: 25%;
+  }
+  /*  ARTICULOS.HTML    */
+  .articulos-grid-productos {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1f 4f;
+    gap: 5px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 5px;
+    grid-template-areas: "foto nombre nombre" "foto descri descri" "foto unixbu cantidad";
+  }
+  /*  SUCURSALES.HTML    */
+  .pagina-sucursales {
+    display: flex;
+    justify-content: space-between;
+  }
+  /*  PEDIDOS.HTML    */
+  .pedidos-grid-pagos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    padding: 10px;
+    grid-template-areas: "medios explicacion botones pago";
+  }
+  /*  ENCONSTRUCCION.HTML    */
+  .encontruccion-texto h1 {
+    font-size: 100px;
+  }
+  .encontruccion-texto h2 {
+    font-size: 50px;
+  }
+  .encontruccion-texto a {
+    font-size: 30px;
+  }
+  /*  REGISTRAR.HTML    */
+  .Resitro-NuevoCliente-Form {
+    width: 400px;
+  }
+}/*# sourceMappingURL=styles.css.map */

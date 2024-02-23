@@ -1,0 +1,125 @@
+@media only screen and (max-width: 767px){
+    /* INDEX.HTML */
+    .cuerpo-index-textos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div{
+            margin: 0.5%;
+            flex: 1;
+            width: 100%;
+        }
+    }
+    /* ARTICULOS.HTML */
+    .articulos-grid-productos {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1f;
+        gap: 5px;
+        border: 2px solid blue;
+        border-radius: 20px;
+        padding: 10px;
+        grid-template-areas:
+        "foto"
+        "nombre"
+        "descri"
+        "unixbu"
+        "cantidad";
+    }
+    /*  SUCURSALES.HTML    */
+    .pagina-sucursales{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    /*  PEDIDOS.HTML    */
+    .pedidos-grid-pagos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+        padding: 15px;
+        grid-template-areas:
+        "medios"
+        "explicacion"
+        "botones"
+        "pago"
+    }
+    
+    /*  ENCONSTRUCCION.HTML    */
+     .encontruccion-texto h1 {
+        font-size: 50px; 
+    }
+    
+    .encontruccion-texto h2 {
+        font-size: 25px; 
+    }
+    .encontruccion-texto a {
+        font-size: 15px; 
+    }
+    /*  REGISTRAR.HTML    */
+    .Resitro-NuevoCliente-Form{
+        width: 80%;
+    }
+ 
+}
+
+@media only screen and (min-width: 767px){
+     /*  INDEX.HTML    */
+    .cuerpo-index-textos{
+        display: flex;
+        div{
+            width: 25%;
+        }
+    }
+    /*  ARTICULOS.HTML    */
+    .articulos-grid-productos {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1f 4f;
+        gap: 5px;
+        border: 2px solid blue;
+        border-radius: 20px;
+        padding: 5px;
+        
+        grid-template-areas:
+        "foto nombre nombre"
+        "foto descri descri"
+        "foto unixbu cantidad";
+    }    
+     /*  SUCURSALES.HTML    */
+     .pagina-sucursales{
+        display: flex;
+        justify-content: space-between;
+    }
+    /*  PEDIDOS.HTML    */
+    .pedidos-grid-pagos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+        padding: 10px;
+        grid-template-areas:
+        "medios explicacion botones pago"
+    }
+
+    /*  ENCONSTRUCCION.HTML    */
+    .encontruccion-texto h1 {
+        font-size: 100px; 
+    }
+    
+    .encontruccion-texto h2 {
+        font-size: 50px; 
+    }
+    .encontruccion-texto a {
+        font-size: 30px; 
+    }
+    /*  REGISTRAR.HTML    */
+    .Resitro-NuevoCliente-Form{
+        width: 400px;
+    }
+
+
+}
+

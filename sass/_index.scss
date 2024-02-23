@@ -1,0 +1,12 @@
+.cuerpo-index-textos{
+    background-image: var(--color-fondo-header);
+    /*background-image: linear-gradient(45deg, #0868B8, #53d4ff, #2196f3, #92CBF9);*/
+    background-size: 200% 100%; 
+    animation: cambiar 10s ease infinite;
+    border-radius: 20px;
+    margin: 0.5%;
+    div{
+        margin: 0.5%;
+    }
+}
+
