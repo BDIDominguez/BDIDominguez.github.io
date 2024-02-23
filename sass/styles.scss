@@ -1,5 +1,13 @@
-@import 'variables';
-@import 'header';
-@import 'footer';
-@import 'index';
-@import 'mediaquery';
+@import './utils/variables';
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/index';
+@import './pages/mediaquery';
+@import './pages/iniciarsesion';
+@import './pages/articulos';
+@import './pages/contactos';
+@import './pages/pedidos';
+@import './pages/registro';
+@import './pages/sucursales';
+@import './pages/enconstruccion';

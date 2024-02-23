@@ -1,0 +1,38 @@
+.pedidos-grid-pagos-item1 {
+    text-align: left;
+    grid-area: medios;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #f0f0f0; 
+    border-radius: 20px; 
+    padding: 10px;
+}
+.pedidos-grid-pagos-item2 {
+    text-align: justify;
+    grid-area: explicacion;
+    padding: 10px;
+    background: #f0f0f0; 
+    border-radius: 20px; 
+}
+.pedidos-grid-pagos-item3 {
+    text-align: center;
+    grid-area: botones;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 20px; 
+}
+.pedidos-grid-pagos-item4 {
+    text-align: center;
+    grid-area: pago;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 20px;
+}

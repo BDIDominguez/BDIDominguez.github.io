@@ -82,7 +82,6 @@ footer i {
 
 .cuerpo-index-textos {
   background-image: var(--color-fondo-header);
-  /*background-image: linear-gradient(45deg, #0868B8, #53d4ff, #2196f3, #92CBF9);*/
   background-size: 200% 100%;
   animation: cambiar 10s ease infinite;
   border-radius: 20px;
@@ -193,4 +192,301 @@ footer i {
   .Resitro-NuevoCliente-Form {
     width: 400px;
   }
+}
+.cuerpo-pagina-iniciarSesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../imagenes/FondoLogin.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fondo {
+  width: 420px;
+  padding: 30px 40px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.cuerpo-pagina-iniciarSesionH1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.fondo .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 45px 10px 20px;
+}
+
+.input-box input::-moz-placeholder {
+  color: #fff;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+}
+
+.fondo .olvidar-recordar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 20px 0 15px;
+}
+
+.olvidar-recordar label input {
+  accent-color: #fff;
+  text-decoration: none;
+  margin-right: 3px;
+}
+
+.olvidar-recordar a:hover {
+  text-decoration: underline;
+}
+
+.fondo .btn {
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #212121;
+}
+
+.fondo .btn:hover {
+  opacity: 0.9;
+}
+
+.registrar-link {
+  font-size: 14.5;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.registrar-link a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.registrar-link a:hover {
+  text-decoration: underline;
+}
+
+.articulos-grid-container-principal {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 5px;
+  grid-template-areas: "area1 area2 " "area1 area2 " "area1 area2  ";
+}
+
+.articulos-grid-container-principal-item1 {
+  text-align: center;
+  grid-area: area1;
+}
+
+.articulos-grid-container-principal-item2 {
+  text-align: center;
+  grid-area: area2;
+}
+
+.articulos-grid-productos-item1 {
+  text-align: center;
+  grid-area: foto;
+}
+
+.articulos-grid-productos-item2 {
+  text-align: center;
+  grid-area: nombre;
+}
+
+.articulos-grid-productos-item3 {
+  text-align: center;
+  grid-area: descri;
+}
+
+.articulos-grid-productos-item4 {
+  text-align: center;
+  grid-area: unixbu;
+}
+
+.articulos-grid-productos-item5 {
+  text-align: center;
+  border: black 5px solod;
+  grid-area: cantidad;
+}
+
+.pagina-contactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../imagenes/FondoLogin.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pagina-contactos-textos {
+  width: 400px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-contacto label {
+  margin-bottom: 5px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto button {
+  margin-bottom: 10px;
+}
+
+.pedidos-grid-pagos-item1 {
+  text-align: left;
+  grid-area: medios;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: #f0f0f0;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.pedidos-grid-pagos-item2 {
+  text-align: justify;
+  grid-area: explicacion;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 20px;
+}
+
+.pedidos-grid-pagos-item3 {
+  text-align: center;
+  grid-area: botones;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 20px;
+}
+
+.pedidos-grid-pagos-item4 {
+  text-align: center;
+  grid-area: pago;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 20px;
+}
+
+.Resitro-NuevoCliente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  background: url("../imagenes/registro.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Resitro-NuevoCliente-Form {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 10px;
+  text-align: center;
+  color: whitesmoke;
+}
+.Resitro-NuevoCliente-Form label, .Resitro-NuevoCliente-Form input, .Resitro-NuevoCliente-Form small {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.Resitro-NuevoCliente-Form label {
+  font-size: 25px;
+}
+
+.card {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.pagina-enconstruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../imagenes/enconstruccion.jpg") no-repeat;
+  background-position: center;
+  /*
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  */
+}
+
+.encontruccion-texto {
+  margin: auto;
+  text-align: center;
+  -webkit-text-stroke: 0.5px black;
+  color: white;
+}
+
+.encontruccion-texto a:hover {
+  color: red;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,49 @@
+.articulos-grid-container-principal {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 5px;
+    grid-template-areas:
+        "area1 area2 "
+        "area1 area2 "
+        "area1 area2  ";
+}
+
+.articulos-grid-container-principal-item1 {
+    text-align: center;
+    grid-area: area1;
+}
+
+.articulos-grid-container-principal-item2 {
+    text-align: center;
+    grid-area: area2;
+}
+
+
+.articulos-grid-productos-item1 {
+    text-align: center;
+    grid-area: foto;
+}
+
+
+
+.articulos-grid-productos-item2 {
+    text-align: center;
+    grid-area: nombre;
+}
+
+.articulos-grid-productos-item3 {
+    text-align: center;
+    grid-area: descri;
+}
+
+.articulos-grid-productos-item4 {
+    text-align: center;
+    grid-area: unixbu;
+}
+
+.articulos-grid-productos-item5 {
+    text-align: center;
+    border: black 5px solod;
+    grid-area: cantidad;
+}

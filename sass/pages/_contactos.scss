@@ -1,0 +1,34 @@
+.pagina-contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../imagenes/FondoLogin.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pagina-contactos-textos{
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario-contacto label{
+    margin-bottom: 5px;
+}
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto button{
+    margin-bottom: 10px;
+}

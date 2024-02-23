@@ -1,0 +1,27 @@
+.Resitro-NuevoCliente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    background: url("../imagenes/registro.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Resitro-NuevoCliente-Form{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    text-align: center;
+    color: whitesmoke;
+    label, input, small {
+        padding-top: 15px;
+        padding-bottom: 15px;    
+    }
+    label {
+        font-size: 25px;
+    } 
+}
