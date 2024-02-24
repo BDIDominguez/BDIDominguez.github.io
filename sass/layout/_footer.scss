@@ -4,6 +4,8 @@ footer{
     background-image: var(--color-fondo-header);
     background-size: 200% 100%;
     animation: cambiar 10s ease infinite;
+    animation-direction: alternate;
+
     a {
         text-decoration: none;
     }
@@ -19,4 +21,8 @@ footer{
     i {
         font-size: 20px;
     }
+}
+
+footer:hover{
+    animation-play-state: paused;
 }

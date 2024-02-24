@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --color-fondo-header: linear-gradient(45deg, #0868B8, #53d4ff, #2196f3, #92CBF9); /* Definición de la variable */
+  --color-fondo-header: linear-gradient(45deg, #012c50,#02457c, #0798c9, #067bdb, #92CBF9); /* Definición de la variable */
   --color-fondo: #ecf0f1;
 }
 
@@ -8,6 +8,7 @@
   background-image: var(--color-fondo-header);
   background-size: 200% 100%;
   animation: cambiar 10s ease infinite;
+  animation-direction: alternate;
 }
 
 @keyframes cambiar {
@@ -57,12 +58,21 @@
   padding: 0;
 }
 
+header:hover {
+  animation-play-state: paused;
+}
+
+footer:hover {
+  animation-play-state: paused;
+}
+
 footer {
   padding: 0;
   margin: 0;
   background-image: var(--color-fondo-header);
   background-size: 200% 100%;
   animation: cambiar 10s ease infinite;
+  animation-direction: alternate;
 }
 footer a {
   text-decoration: none;
@@ -80,10 +90,15 @@ footer i {
   font-size: 20px;
 }
 
+footer:hover {
+  animation-play-state: paused;
+}
+
 .cuerpo-index-textos {
   background-image: var(--color-fondo-header);
   background-size: 200% 100%;
   animation: cambiar 10s ease infinite;
+  animation-direction: alternate;
   border-radius: 20px;
   margin: 0.5%;
 }
@@ -434,7 +449,7 @@ footer i {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100%;
+  min-height: 100vh;
   background: url("../imagenes/registro.jpg") no-repeat;
   background-position: center;
   background-size: cover;

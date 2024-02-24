@@ -1,0 +1,9 @@
+@mixin cuerpo-pagina-logins ($foto){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: $foto no-repeat;
+    background-position: center;
+    background-size: cover;
+}
