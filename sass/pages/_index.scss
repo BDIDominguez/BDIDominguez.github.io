@@ -1,8 +1,5 @@
 .cuerpo-index-textos{
-    background-image: var(--color-fondo-header);
-    background-size: 200% 100%; 
-    animation: cambiar 10s ease infinite;
-    animation-direction: alternate;
+    @include animacion-fondo;
     border-radius: 20px;
     margin: 0.5%;
     div{

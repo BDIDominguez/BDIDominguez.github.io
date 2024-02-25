@@ -1,8 +1,5 @@
 .navbar-custom{
-    background-image: var(--color-fondo-header);
-    background-size: 200% 100%;
-    animation: cambiar 10s ease infinite;
-    animation-direction: alternate;
+    @include animacion-fondo;
 }
 
 @keyframes cambiar {
