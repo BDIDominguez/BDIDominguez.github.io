@@ -4,10 +4,15 @@
   --color-fondo: #ecf0f1;
 }
 
+.margen-paddin0, footer, .navbar {
+  padding: 0;
+  margin: 0;
+}
+
 .navbar-custom {
   background-image: var(--color-fondo-header);
   background-size: 200% 100%;
-  animation: cambiar 10s ease infinite;
+  animation: cambiar 5s ease infinite;
   animation-direction: alternate;
 }
 
@@ -26,11 +31,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-
-.navbar {
-  margin: 0;
-  padding: 0;
 }
 
 .navbar-nav .nav-item {
@@ -63,11 +63,9 @@ header:hover {
 }
 
 footer {
-  padding: 0;
-  margin: 0;
   background-image: var(--color-fondo-header);
   background-size: 200% 100%;
-  animation: cambiar 10s ease infinite;
+  animation: cambiar 5s ease infinite;
   animation-direction: alternate;
 }
 footer a {
@@ -85,6 +83,9 @@ footer a:hover {
 footer i {
   font-size: 20px;
 }
+footer:hover {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
 
 footer:hover {
   animation-play-state: paused;
@@ -93,7 +94,7 @@ footer:hover {
 .cuerpo-index-textos {
   background-image: var(--color-fondo-header);
   background-size: 200% 100%;
-  animation: cambiar 10s ease infinite;
+  animation: cambiar 5s ease infinite;
   animation-direction: alternate;
   border-radius: 20px;
   margin: 0.5%;

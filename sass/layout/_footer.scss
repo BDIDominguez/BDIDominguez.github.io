@@ -1,6 +1,6 @@
 footer{
-    padding: 0;
-    margin: 0;
+    
+    @extend .margen-paddin0;
     @include animacion-fondo;
 
     a {
@@ -13,10 +13,13 @@ footer{
         font-size: 20px;
     }
     a:hover{
-        color: hsl(4,88%,45%) !important;
+        color: map-get($colores , hovers) !important;
     }
     i {
         font-size: 20px;
+    }
+    &:hover {
+        animation: fadeIn 0.3s ease-in-out forwards;
     }
 }
 

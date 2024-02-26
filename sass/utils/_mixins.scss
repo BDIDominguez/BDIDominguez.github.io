@@ -11,6 +11,6 @@
 @mixin animacion-fondo{
     background-image: var(--color-fondo-header);
     background-size: 200% 100%;
-    animation: cambiar 1s ease infinite;
+    animation: cambiar 5s ease infinite;
     animation-direction: alternate;
 }

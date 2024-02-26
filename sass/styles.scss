@@ -1,7 +1,10 @@
 @import './utils/variables';
+@import './utils/extend';
+@import './utils/maps';
+@import './utils/mixins';
 @import './layout/header';
 @import './layout/footer';
-@import './utils/mixins';
+
 
 @import './pages/index';
 @import './pages/mediaquery';
@@ -12,3 +15,4 @@
 @import './pages/registro';
 @import './pages/sucursales';
 @import './pages/enconstruccion';
+
