@@ -5,9 +5,9 @@
     width: 420px;
     padding: 30px 40px;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(150px);
     border-radius: 10px;
-    color: #fff;
+    color: black;
 }
 .cuerpo-pagina-iniciarSesionH1{
     text-align: center;
@@ -72,14 +72,12 @@
 .fondo .btn:hover{
     opacity: 0.9;
 }
-.registrar-link{
+.registrar-link {
     font-size: 14.5;
     text-align: center;
     margin-top: 20px;
-}
-.registrar-link a{
     text-decoration:none;
-    color: #fff;
+    color: black;
     font-weight: 600;
 }
 .registrar-link a:hover{

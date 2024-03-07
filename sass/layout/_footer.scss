@@ -1,16 +1,20 @@
 footer{
-    
     @extend .margen-paddin0;
     @include animacion-fondo;
-
+    margin: 0;
+    padding: 0;
     a {
         text-decoration: none;
+        color: black;
     }
     p{
         font-size: 15px;
+        color: black;
+        
     }
     li{
         font-size: 20px;
+        color: black;
     }
     a:hover{
         color: map-get($colores , hovers) !important;
@@ -21,8 +25,12 @@ footer{
     &:hover {
         animation: fadeIn 0.3s ease-in-out forwards;
     }
+    h5 {
+        color: black; // o el color que desees
+    }
 }
 
 footer:hover{
     animation-play-state: paused;
 }
+

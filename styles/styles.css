@@ -67,15 +67,20 @@ footer {
   background-size: 200% 100%;
   animation: cambiar 5s ease infinite;
   animation-direction: alternate;
+  margin: 0;
+  padding: 0;
 }
 footer a {
   text-decoration: none;
+  color: black;
 }
 footer p {
   font-size: 15px;
+  color: black;
 }
 footer li {
   font-size: 20px;
+  color: black;
 }
 footer a:hover {
   color: hsl(4, 88%, 45%) !important;
@@ -85,6 +90,9 @@ footer i {
 }
 footer:hover {
   animation: fadeIn 0.3s ease-in-out forwards;
+}
+footer h5 {
+  color: black;
 }
 
 footer:hover {
@@ -219,10 +227,10 @@ footer:hover {
   width: 420px;
   padding: 30px 40px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
   border-radius: 10px;
-  color: #fff;
+  color: black;
 }
 
 .cuerpo-pagina-iniciarSesionH1 {
@@ -305,11 +313,8 @@ footer:hover {
   font-size: 14.5;
   text-align: center;
   margin-top: 20px;
-}
-
-.registrar-link a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-weight: 600;
 }
 
@@ -457,11 +462,11 @@ footer:hover {
   margin-bottom: 5px;
   padding: 10px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
   border-radius: 10px;
   text-align: center;
-  color: whitesmoke;
+  color: black;
 }
 .Resitro-NuevoCliente-Form label, .Resitro-NuevoCliente-Form input, .Resitro-NuevoCliente-Form small {
   padding-top: 15px;
@@ -469,6 +474,9 @@ footer:hover {
 }
 .Resitro-NuevoCliente-Form label {
   font-size: 25px;
+}
+.Resitro-NuevoCliente-Form .form-check-label {
+  font-size: 15px;
 }
 
 .card {
