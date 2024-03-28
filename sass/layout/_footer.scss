@@ -7,7 +7,7 @@ footer{
         text-decoration: none;
         color: black;
     }
-    p{
+    p, footerContacto{
         font-size: 15px;
         color: black;
         
@@ -29,6 +29,7 @@ footer{
         color: black; // o el color que desees
     }
 }
+
 
 footer:hover{
     animation-play-state: paused;
